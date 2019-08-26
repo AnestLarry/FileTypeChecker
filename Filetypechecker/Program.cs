@@ -18,9 +18,9 @@ namespace Filetypechecker
 
             if (args.Length > 0)
             {
-                Console.WriteLine(args[0]);
                 if (File.Exists(args[0]))
                 {
+                    Console.WriteLine("Check File:\n"+args[0]+"\n");
                     byte[] fileheader = getfileheader(args[0]);
                     GetData data = new GetData();
                     data.Input(fileheader);
