@@ -9,7 +9,7 @@ namespace Filetypechecker
         static void Main(string[] args)
         {
             Console.Title = "File Type Checker";
-            if(File.Exists("file.db") == false)
+            if(File.Exists(AppDomain.CurrentDomain.BaseDirectory + "file.db") == false)
             {
                 Console.WriteLine("file.db is not exists!\nFind or Download it!");
                 Console.ReadKey();

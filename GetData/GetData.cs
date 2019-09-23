@@ -48,7 +48,8 @@ namespace getdata
         private SQLiteConnection conn;
         public sqlite3handle()
         {
-            conn = new SQLiteConnection("data source=file.db");
+
+            conn = new SQLiteConnection("data source="+ AppDomain.CurrentDomain.BaseDirectory + "file.db");
             conn.Open();
 
         }
